@@ -13,6 +13,9 @@ a {
     color: black;
     text-decoration: none;
 }
+.link {
+    text-decoration: underline;
+}
 
 header,
 footer {
@@ -50,12 +53,13 @@ main h2 {
     gap: 0 40px;
 }
 
-#works div {
-    margin: 10px;
-}
-
 #container-3 i {
     font-size: 3em;
+}
+#c3_link_ {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 40px;
 }
 
 .hide-area {
