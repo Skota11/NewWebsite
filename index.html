@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Skota11Website">
-<meta property="og:description" content="@Skota11のウェブサイトです。">
-<meta property="og:site_name" content="Skota11">
-<meta property="og:url" content="https://skota11.github.io">
-<meta property="og:image" content="/img/top.jpg">
-<meta property="og:locale" content="ja_JP">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
+    <meta property="og:description" content="@Skota11のウェブサイトです。">
+    <meta property="og:site_name" content="Skota11">
+    <meta property="og:url" content="https://skota11.github.io">
+    <meta property="og:image" content="/img/top.jpg">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     <title>Skota11</title>
     <script src="https://kit.fontawesome.com/a60744fb42.js" crossorigin="anonymous"></script>
     <style>
@@ -139,18 +139,29 @@
             </section>
         </div>
         <div id="container-4">
-            <p>
             <h2>Contact</h2>
-            </p>
-            <p>お問い合わせフォーム(IPを回収します)、またはメールで受け付けています。</p>
+            <ul class="accordion-area">
+                <li></li>
+                <li>
+                    <!--li ~ /li までが一つのアコーディオン-->
+                    <section>
+                        <h3 class="title">フォーム</h3>
+                        <div class="box">
+                            </p>
+                            <p>お問い合わせフォーム(IPを回収します)、またはメールで受け付けています。</p>
+                            <p>
+                                mail:<a href="mailto:contact@skota11.com">contact☆skota11.com</a>(☆ => @)
+                            </p>
+                            <form action="https://contact-me.skota11.repl.co/" method="post">
+                                <p>名前(TwitterIDかDiscord(#四桁も))</p><input type="text" name="name">
+                                <p>お問い合わせ内容</p><textarea name="content" id="" cols="30" rows="10"></textarea>
+                                <p><input type="submit"></p>
+                            </form>
+                        </div>
+                    </section>
+                </li>
+            </ul>
             <p>
-                mail:<a href="mailto:contact@skota11.com">contact☆skota11.com</a>(☆ => @)
-            </p>
-            <form action="https://contact-me.skota11.repl.co/" method="post">
-                <p>名前(TwitterIDかDiscord(#四桁も))</p><input type="text" name="name">
-                <p>お問い合わせ内容</p><textarea name="content" id="" cols="30" rows="10"></textarea>
-                <p><input type="submit"></p>
-            </form>
         </div>
     </main>
     <footer>
