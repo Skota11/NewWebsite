@@ -17,6 +17,7 @@ $('.title').on('click', function () {//タイトル要素をクリックした�
     $(this).addClass('close');//クラス名closeを付与
   }
 });
+//console()
 
 //ページが読み込まれた際にopenクラスをつけ、openがついていたら開く動作※不必要なら下記全て削除
 $(window).on('load', function () {
