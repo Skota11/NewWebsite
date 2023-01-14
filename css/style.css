@@ -17,17 +17,32 @@ a {
     text-decoration: underline;
 }
 
-header,
-footer {
+header {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 3em;
+}
+footer {
+    background-color: #121212;
+    color: #fafafa;
 }
 
 header a {
+    padding-top: 1em;
     text-align: center;
+}
+footer *{
+    margin: 0;
+}
+#CopyRight {
+    text-align: center;
+    padding-top: 1em;
+}
+footer .foo_info {
+    padding: 1em 0 ;
+    margin: 0;
+    font-size: 0.85em;
 }
 
 main {
