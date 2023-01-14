@@ -33,8 +33,9 @@ main {
 }
 
 main h2 {
+    display: inline;
     border-bottom: solid;
-    max-width: 100px;
+    width: auto;
 }
 
 #top_title {
