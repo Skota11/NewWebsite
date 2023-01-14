@@ -17,11 +17,10 @@ a {
     text-decoration: underline;
 }
 
-header {
+#header_top {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 footer {
     background-color: #121212;
@@ -32,16 +31,14 @@ header a {
     padding-top: 1em;
     text-align: center;
 }
-footer *{
-    margin: 0;
-}
 #CopyRight {
     text-align: center;
     padding-top: 1em;
 }
 footer .foo_info {
+    width: 80%;
+    margin: auto;
     padding: 1em 0 ;
-    margin: 0;
     font-size: 0.85em;
 }
 
@@ -54,6 +51,15 @@ main h2 {
     display: inline;
     border-bottom: solid;
     width: auto;
+}
+
+#header_link {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1em;
+    float: right;
+    margin-right: 2em;
+    margin-top: 0.5em;
 }
 
 #top_title {
@@ -83,6 +89,9 @@ main h2 {
 
 .info {
     color: black;
+}
+.link_title {
+    margin-left: 0.5em;
 }
 
 /*アコーディオン全体*/
@@ -151,7 +160,6 @@ main h2 {
     display: none;
     /*はじめは非表示*/
     margin: 0 3% 3% 3%;
-    padding: 3%;
 }
 
 .hide-area {
