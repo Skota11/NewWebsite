@@ -25,6 +25,7 @@ a {
 footer {
     background-color: #121212;
     color: #fafafa;
+    height: auto;
 }
 
 header a {
