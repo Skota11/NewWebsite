@@ -1,9 +1,3 @@
-@media screen and (max-width: 480px) {
-    #works {
-        display: block;
-    }
-}
-
 body {
     margin: 0;
     background-color: #fafafa;
@@ -268,4 +262,16 @@ textarea {
   outline: none;
   line-height: 1.6;
   resize: vertical;
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        width: 100%;
+        }
+        #followMe {
+            display: none;
+        }
+        #header_link {
+            margin-right: 0;
+        }
 }
