@@ -75,7 +75,7 @@ main h2 {
     gap: 0 40px;
 }
 
-#container-3 i {
+#c3_link_ i {
     font-size: 3em;
 }
 #c3_link_ {
@@ -83,7 +83,24 @@ main h2 {
     flex-wrap: wrap;
     gap: 0 40px;
 }
-
+#c4_content {
+    margin: 1em 0 ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 40px;
+    justify-content: center;
+    align-items: center;
+}
+.c4_child {
+    box-shadow: 0px 0px 15px -5px #777777;
+border-radius: 10px;
+    max-width: 15em;
+    padding: 1em;
+}
+.c4_child .date{
+    font-size: 0.8em;
+    color: #333;
+}
 .hide-area {
     display: none;
 }
@@ -189,7 +206,6 @@ ul {
     border-bottom: 2px solid #9b9b9b;
     outline: 0;
     font-size: 17px;
-    color: #fff;
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;
@@ -237,4 +253,19 @@ ul {
 .form__field:required,
 .form__field:invalid {
     box-shadow: none;
+}
+
+textarea {
+    display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  max-height: 170px;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  font-size: 14px;
+  outline: none;
+  line-height: 1.6;
+  resize: vertical;
 }
