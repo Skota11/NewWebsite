@@ -48,7 +48,7 @@ main h2 {
     width: auto;
 }
 
-#header_link {
+.header_link {
     display: flex;
     flex-wrap: wrap;
     gap: 0 1em;
@@ -99,9 +99,6 @@ border-radius: 10px;
     display: none;
 }
 
-.info {
-    color: black;
-}
 .link_title {
     margin-left: 0.5em;
 }
@@ -263,7 +260,7 @@ textarea {
   line-height: 1.6;
   resize: vertical;
 }
-
+/* レスポンシブ */
 @media screen and (max-width: 480px) {
     main {
         width: 100%;
@@ -271,7 +268,17 @@ textarea {
         #followMe {
             display: none;
         }
-        #header_link {
+        .header_link {
             margin-right: 0;
         }
 }
+/* ダークモード */
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: #121212;
+      color: #fafafa;
+    }
+    a {
+        color:#fafafa;
+    }
+  }
