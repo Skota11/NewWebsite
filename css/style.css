@@ -278,6 +278,15 @@ textarea {
       background-color: #121212;
       color: #fafafa;
     }
+    .c4_child .date{
+        color: #a1a1a1;
+    }
+    .modaal-content-container {
+        background-color: #121212;
+    }
+    .modaal-content-container * {
+        color: #fafafa;
+    }
     a {
         color:#fafafa;
     }
