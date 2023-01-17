@@ -60,7 +60,20 @@ main h2 {
 #top_title {
     font-size: 3em;
 }
-
+#mkSkill_pa i{
+    font-size: 2.5em;
+}
+#mkSkill_pa {
+    margin: 1em 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1em;
+}
+.mySkill_child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #works {
     display: flex;
     justify-content: center;
@@ -272,6 +285,17 @@ textarea {
             margin-right: 0;
         }
 }
+/* スクロール */
+  /* スクロール */
+  ::-webkit-scrollbar{
+    width: 10px;
+ }
+ ::-webkit-scrollbar-track{
+    background-color: #fafafa;
+ }
+ ::-webkit-scrollbar-thumb{
+    background-color: #121212;
+ }
 /* ダークモード */
 @media (prefers-color-scheme: dark) {
     body {
@@ -287,6 +311,16 @@ textarea {
     .modaal-content-container * {
         color: #fafafa;
     }
+      /* スクロール */
+  ::-webkit-scrollbar{
+    width: 10px;
+ }
+ ::-webkit-scrollbar-track{
+    background-color: #121212;
+ }
+ ::-webkit-scrollbar-thumb{
+    background-color: #fafafa;
+ }
     a {
         color:#fafafa;
     }
