@@ -268,7 +268,7 @@
   res => res.json()
 ).then(
   res => {
-    if (res.activities == []) {
+    if (res.activities == undefined) {
       document.getElementById("status").textContent = `現在オフラインか何もプレイしていません。`
     } else {
       if (res.activities[0].type == "LISTENING") {
