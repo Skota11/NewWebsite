@@ -35,14 +35,14 @@ fetch("https://ac.skota11.com/activity").then(
 ).then(
   res => {
     if (res.activities == "OFFLINE") {
-      document.getElementById("activity").textContent = `現在オフラインです。`
+      document.getElementById("status").textContent = `現在オフラインです。`
     } else {
       if (res.activities[0].type == "LISTENING") {
-        document.getElementById("activity").innerHTML = `${res.activities[0].name}を再生中。<br>${res.activities[0].details} / ${res.activities[0].state}`  
+        document.getElementById("status").innerHTML = `${res.activities[0].name}を再生中。<br>${res.activities[0].details} / ${res.activities[0].state}`  
       } else if(res.activities[0].type == "PLAYING"){
-        document.getElementById("activity").innerHTML = `${res.activities[0].name}をプレイ中。<br>${res.activities[0].details}`
+        document.getElementById("status").innerHTML = `${res.activities[0].name}をプレイ中。<br>${res.activities[0].details}`
       }else {
-        `${res[0].name}をプレイ中。`
+        document.getElementById("status").innerHTML = `${res.activities[0].name}をプレイ中。`
       }
     }
   }
