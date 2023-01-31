@@ -244,7 +244,10 @@
                 <div id="container-7">
                     <h2><i class="fa-solid fa-signal"></i> MyStatus(Discord)</h2>
                     <p>Skota11の現在のステータスです。</p>
-                    <p id="status"></p>
+                    <div id="status_div">
+                        <p id="status"></p>
+                    <p id="activity"></p>
+                    </div>
                     </div>
     </main>
     <footer>
@@ -268,15 +271,29 @@
   res => res.json()
 ).then(
   res => {
+    console.log(res.status)
+    switch (res.status) {
+        case "online":
+        document.getElementById("status").innerHTML = `<span style="color: green;">●</span>ONLINE`;
+        break;
+        case "idle":
+        document.getElementById("status").innerHTML = `<span style="color: orange;">●</span>Idle`;
+        break;
+        case "dnd":
+        document.getElementById("status").innerHTML = `<span style="color: red;">●</span>Do Not Disturb`;
+        break;
+        default:
+            break;
+    }
     if (res.activities.length == 0) {
-      document.getElementById("status").textContent = `現在オフラインか何もプレイしていません。`
+      document.getElementById("activity").textContent = `現在オフラインか何もプレイしていません。`
     } else {
       if (res.activities[0].type == "LISTENING") {
-        document.getElementById("status").innerHTML = `${res.activities[0].name}を再生中。<br>${res.activities[0].details} / ${res.activities[0].state}`  
+        document.getElementById("activity").innerHTML = `${res.activities[0].name}を再生中。<br>${res.activities[0].details} / ${res.activities[0].state}`  
       } else if(res.activities[0].type == "PLAYING"){
-        document.getElementById("status").innerHTML = `${res.activities[0].name}をプレイ中。<br>${res.activities[0].details}`
+        document.getElementById("activity").innerHTML = `${res.activities[0].name}をプレイ中。<br>${res.activities[0].details}`
       }else {
-        document.getElementById("status").innerHTML = `${res.activities[0].name}をプレイ中。`
+        document.getElementById("activity").innerHTML = `${res.activities[0].name}をプレイ中。`
       }
     }
   }

@@ -108,6 +108,20 @@ border-radius: 10px;
     font-size: 0.8em;
     color: #333;
 }
+#status_div {
+    border-left: solid;
+    padding: 0.5em;
+}
+#status {
+    margin: 0;
+    padding: 0;
+}
+#activity {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
 .hide-area {
     display: none;
 }
