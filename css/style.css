@@ -36,8 +36,10 @@ footer .foo_info {
     padding: 1em 0 ;
     font-size: 0.85em;
 }
-
-main {
+#dark_line{
+    display: none;
+}
+main{
     width: 70%;
     margin: auto;
 }
@@ -318,6 +320,9 @@ textarea {
     }
     .c4_child .date{
         color: #a1a1a1;
+    }
+    #dark_line{
+        display: block;
     }
     .modaal-content-container {
         background-color: #121212;
