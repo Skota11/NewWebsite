@@ -283,10 +283,11 @@
         document.getElementById("status").innerHTML = `<span style="color: red;">●</span>Do Not Disturb`;
         break;
         default:
+        document.getElementById("status").innerHTML = `<span>●</span>OFFLINE`;
             break;
     }
     if (res.activities.length == 0) {
-      document.getElementById("activity").textContent = `現在オフラインか何もプレイしていません。`
+      document.getElementById("activity").textContent = `現在何もプレイしていません。`
     } else {
       if (res.activities[0].type == "LISTENING") {
         document.getElementById("activity").innerHTML = `${res.activities[0].name}を再生中。<br>${res.activities[0].details} / ${res.activities[0].state}`  
