@@ -132,6 +132,19 @@ border-radius: 10px;
     margin-left: 0.5em;
 }
 
+.app {
+    border-left: solid;
+    padding: 1em;
+    margin: 1.5em 0;
+}
+.app_title {
+    font-size: 1.25em;
+}
+.app_link {
+    font-size: 0.8em;
+    color: gray;
+}
+
 /*アコーディオン全体*/
 .accordion-area {
     list-style: none;
