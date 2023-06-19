@@ -110,6 +110,11 @@ border-radius: 10px;
     font-size: 0.8em;
     color: #333;
 }
+#top_popup {
+    padding: 1em 0;
+    text-align: center;
+}
+
 #status_div {
     border-left: solid;
     padding: 0.5em;
@@ -306,6 +311,7 @@ textarea {
 @media screen and (max-width: 480px) {
     main {
         width: 100%;
+        margin: 0 1em;
         }
         #followMe {
             display: none;
